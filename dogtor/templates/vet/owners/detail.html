@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}
+<title>Pet Owner</title>
+{% endblock title %}
+
+{% block header %}
+<h1>Pet Owner Detail</h1>
+{% endblock header %}
+
+{% block content %}
+
+<h1>Bienvenido {{owner.first_name}}</h1>
+<span><strong>Name:  </strong> {{ owner.first_name }} {{owner.last_name}} </span><hr/>
+<span><strong>Address:  </strong>{{owner.address}}</span><hr/>
+<span><strong>Email:  </strong>{{owner.email}}</span><hr/>
+<span><strong>Phone:  </strong>{{owner.phone}}</span><hr/>
+{% endblock content %}
